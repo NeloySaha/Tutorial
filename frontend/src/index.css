@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
