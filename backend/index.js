@@ -47,7 +47,7 @@ app.post("/create", (req, res) => {
   const { id, name, category, age, salary } = req.body;
 
   db.query(sql, [id, name, category, age, salary], (err, data) => {
-    if (err) res.json(err);
+    if (err) return res.json(err);
 
     return res.send("Data Inserted Successfully");
   });
